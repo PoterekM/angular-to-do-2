@@ -3,10 +3,13 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   template: `
-  <h1>My First Angular 2 App</h1>
+  <div class="container">
+    <h1>To Do List</h1>
+    <h3>{{currentFocus}}</h3>
+  </div>
   `
 })
 
 export class AppComponent {
-
+  currentFocus: string = 'Angular Homework';
 }
